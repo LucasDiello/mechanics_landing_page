@@ -1,0 +1,42 @@
+
+.hero {
+    position: relative;
+    background-image: url(../assets/images/hero-bg.jpg);
+    padding-block-start: calc(var(--section-padding) + 10px);
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .hero .containe {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .hero .section-subtitle { text-transform: unset; }
+  
+  .hero .section-text {
+    color: var(--white);
+    margin-block: 14px 18px;
+  }
+  
+  .hero .btn { margin-inline: auto; }
+  
+  .hero-banner { aspect-ratio: var(--width) / var(--height); }
+  
+  .hero-banner img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  @keyframes moving {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+  }
+  
+  .move-anim { animation: moving 2s ease-in-out infinite alternate; }
+  

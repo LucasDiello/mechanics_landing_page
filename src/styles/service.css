@@ -1,0 +1,17 @@
+
+.service-banner { display: none; }
+
+.service { text-align: center; }
+
+.service-list {
+  gap: 0;
+  margin-block-end: 40px;
+}
+
+.service-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 24px;
+}
+
+.service .btn { margin-inline: auto; }

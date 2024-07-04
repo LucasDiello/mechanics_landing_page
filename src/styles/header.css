@@ -1,0 +1,45 @@
+.nav-toggle-icon {
+  width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  transition: var(--transition);
+}
+
+.nav-toggle-icon:not(:last-child) {
+  margin-block-end: 7px;
+}
+
+.nav-toggle-btn.active .icon-2 {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.nav-toggle-btn.active .icon-1 {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.nav-toggle-btn.active .icon-3 {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.navbar {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: var(--international-orange-engineering);
+  z-index: 2;
+}
+
+.navbar-link {
+  font-family: var(--ff-chakra-petch);
+  font-size: var(--fs-5);
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 10px 20px;
+  transition: var(--transition);
+}
+
+.navbar-link:is(:hover, :focus-visible) {
+  background-color: var(--white);
+  color: var(--international-orange-engineering);
+}

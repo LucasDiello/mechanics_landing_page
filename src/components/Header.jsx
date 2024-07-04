@@ -1,12 +1,76 @@
-import React from 'react'
-import '../tailwind.css';
+import React, { useState } from "react";
+import logo from "../assets/images/logo.png";
+import { BiArrowFromLeft, BiArrowFromRight } from "react-icons/bi";
+import "../styles/header.css"
 
 const Header = () => {
-  return (
-    <header className=''>
-        Header
-        </header>
-  )
-}
+  const [navbar, setNavbar] = useState(false);
 
-export default Header
+  return (
+    <header
+      className="header absolute top-0 left-0 w-[100%] p-[40px 15px] ps-10
+    z-10"
+    >
+      <div className="containe flex justify-between items-center mx-auto ">
+        <a href="#" className="logo">
+          <img src={logo} width="128" height="63" className="ml-28"  alt="autofix home" />
+        </a>
+
+        <nav className={`navbar ${navbar ? "active" : "hidden"}`} data-navbar>
+          <ul className="navbar-list">
+            <li>
+              <a href="#" className="navbar-link">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="navbar-link">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="navbar-link">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="navbar-link">
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="navbar-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" className="btn hidden btn-primary">
+          <span className="span">Get a Quote</span>
+
+          <span className="material-symbols-rounded">
+            <BiArrowFromLeft />
+          </span>
+        </a>
+
+        <button
+          className={`nav-toggle-btn ${navbar ? "active" : ""}`}
+          aria-label="toggle menu"
+          data-nav-toggler
+          onClick={() => setNavbar(!navbar)}
+        >
+          <span className="nav-toggle-icon icon-1"></span>
+          <span className="nav-toggle-icon icon-2"></span>
+          <span className="nav-toggle-icon icon-3"></span>
+        </button>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

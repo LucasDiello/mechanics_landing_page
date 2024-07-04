@@ -85,6 +85,11 @@ body {
   color: var(--sonic-silver);
   font-size: 1.6rem;
   line-height: 1.5;
+  background-color: var(--eerie-black);
+}
+
+.containe {
+  padding-inline: 16px;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -96,3 +101,96 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+.material-symbols-rounded {
+  font-size: 1.2em;
+  font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 40;
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.section-subtitle {
+  max-width: max-content;
+  font-family: var(--ff-chakra-petch);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  margin-block-end: 12px;
+  margin-inline: auto;
+}
+
+.section-subtitle::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 30px;
+  margin-block-end: -2px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.section-subtitle.\:dark { color: var(--white); }
+
+.section-subtitle.\:dark::before { background-image: url('./assets/images/text-bars-light.png'); }
+
+.section-subtitle.\:light { color: var(--international-orange-engineering); }
+
+.section-subtitle.\:light::before { background-image: url('./assets/images/text-bars-dark.png'); }
+
+.section-title { text-align: center; }
+
+.h1,
+.h2,
+.h3,
+.display-1 {
+  font-family: var(--ff-chakra-petch);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.display-1 { font-size: var(--fs-); }
+
+.h1 {
+  color: var(--white);
+  font-size: var(--fs-2);
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+
+.btn {
+  background-color: var(--international-orange-engineering);
+  color: var(--white);
+  max-width: max-content;
+  font-family: var(--ff-chakra-petch);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  will-change: transform;
+}
+
+.btn:is(:hover, :focus-visible) {
+  transform: translateY(-5px);
+  background-color: var(--oxford-blue-3);
+  border-color: var(--white);
+}
+
+.btn-link {
+  font-family: var(--ff-chakra-petch);
+  text-transform: uppercase;
+  color: var(--international-orange-engineering);
+  font-weight: var(--fw-700);
+}
+
+.service-banner { display: none; }
+

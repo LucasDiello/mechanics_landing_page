@@ -1,12 +1,14 @@
 import './App.css'
 import Header from './components/Header'
-import 'tailwindcss/tailwind.css';
+import Hero from './components/Hero'
+import "./tailwind.css";
 
 function App() {
 
   return (
     <>
     <Header />
+    <Hero />
     </>
   )
 }
