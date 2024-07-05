@@ -1,0 +1,26 @@
+.about {
+  background-color: var(--space-cadet);
+  color: var(--white);
+  text-align: center;
+}
+
+.about .section-text:nth-child(3) {
+  margin-block: 12px 8px;
+}
+
+
+.about-item {
+  background-color: var(--oxford-blue-2);
+  padding: 40px 20px;
+  transition: var(--transition);
+}
+
+.about-item:hover {
+  background-color: var(--international-orange-engineering);
+  transform: translateY(-8px);
+}
+
+.about-item .strong {
+  display: block;
+  line-height: 1.1;
+}
