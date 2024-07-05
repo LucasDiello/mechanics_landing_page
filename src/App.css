@@ -106,6 +106,14 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 40;
 }
 
+.section-subtitle.\:dark { color: var(--white); }
+
+.section-subtitle.\:dark::before { background-image: url('./assets/images/text-bars-light.png'); }
+
+.section-subtitle.\:light { color: var(--international-orange-engineering); }
+
+.section-subtitle.\:light::before { background-image: url('./assets/images/text-bars-dark.png'); }
+
 .has-bg-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,14 +140,6 @@ body {
   background-size: contain;
   background-position: center;
 }
-
-.section-subtitle.\:dark { color: var(--white); }
-
-.section-subtitle.\:dark::before { background-image: url('./assets/images/text-bars-light.png'); }
-
-.section-subtitle.\:light { color: var(--international-orange-engineering); }
-
-.section-subtitle.\:light::before { background-image: url('./assets/images/text-bars-dark.png'); }
 
 .section-title { text-align: center; }
 
@@ -226,4 +226,5 @@ body {
 }
 
 .has-scrollbar::-webkit-scrollbar-button { width: 15%; }
+
 

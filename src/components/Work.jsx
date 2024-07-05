@@ -32,7 +32,7 @@ const projects = [
 const Work = () => {
   return (
     <section className="section work mt-10" aria-labelledby="work-label">
-      <div className="container">
+      <div className="containe">
 
         <p className="section-subtitle text-[2rem] :light" id="work-label">Our Work</p>
 

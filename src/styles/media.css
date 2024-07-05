@@ -1,0 +1,111 @@
+@media (min-width: 575px) {
+  .hero-banner img {
+    width: 80%;
+  }
+  .service .section-title {
+    margin-block-end: 30px;
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-block-end: 40px;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .about-item {
+    padding-block: 20px;
+  }
+  /**
+     * WORK
+     */
+
+  .scrollbar-item {
+    min-width: calc(47%);
+  }
+
+  .footer-top {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-top .containe {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer .shape-3 {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /**
+     * CUSTOM PROPERTY
+     */
+  .hero-banner img {
+    width: 60%;
+  }
+  :root {
+    /**
+       * typography
+       */
+
+    --fs-1: 4rem;
+    --fs-2: 5rem;
+    --fs-3: 3.4rem;
+  }
+
+  .btn {
+    padding: 16px 32px;
+  }
+
+  .section-subtitle {
+    --fs-5: 1.8rem;
+  }
+
+  .section-title:not(.h1) {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+
+  .hero {
+    --section-padding: 120px;
+  }
+
+  .service-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-banner img {
+    margin-block-start: 15%;
+  }
+
+  /**
+     * ABOUT
+     */
+
+  .about-banner {
+    max-width: max-content;
+  }
+
+  .about-banner,
+  .about .section-text {
+    margin-inline: auto;
+  }
+
+  .about .section-text {
+    max-width: 520px;
+  }
+
+  .footer-top .containe {
+    grid-template-columns: 1fr 0.9fr 0.9fr;
+  }
+}

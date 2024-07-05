@@ -1,6 +1,4 @@
 
-.service-banner { display: none; }
-
 .service { text-align: center; }
 
 .service-list {
@@ -15,5 +13,3 @@
 }
 
 .service .btn { margin-inline: auto; }
-
-.service-banner { display: none; }

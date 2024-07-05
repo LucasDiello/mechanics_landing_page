@@ -58,14 +58,14 @@ const services = [
 const Service = () => {
   return (
     <section className="section pt-20 service has-bg-image" aria-labelledby="service-label" style={{ backgroundImage: `url(${serviceBgImage})` }}>
-      <div className="container">
+      <div className="containe">
         <p className="section-subtitle :light" id="service-label">Our services</p>
         <h2 className="text-[var(--eerie-black)] h2 text-[2.4rem] font-[var(--fw-600)] leading-10 section-title">We Provide Great Services For your Vehicle</h2>
         <ul className="service-list">
           {services.map((service, index) => (
-            <li key={service.id} className={`${index === 4 && "service-banner"}`}>
-              <div className="service-card">
-                <figure className="card-icon">
+            <li key={service.id} >
+              <div className="service-card ">
+                <figure className={`card-icon ${index === 4 && "service-banner"} ${index === 4 && "xs:hidden"}`}>
                   <img src={service.image} width={`${index === 4 ? "646" : "110"}`}
                    height={`${index === 4 ? "380" : "110"}`} loading="lazy" alt={service.alt} />
                 </figure>

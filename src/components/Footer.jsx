@@ -86,7 +86,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <div className="container">
+        <div className="containe">
           <img src={footerShape2} width="778" height="335" loading="lazy" alt="Shape" className="shape shape-2" />
           <img src={footerShape} width="805" height="652" loading="lazy" alt="Red Car" className="shape shape-1 move-anim" />
         </div>
