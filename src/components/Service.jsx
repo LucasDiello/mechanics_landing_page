@@ -65,7 +65,7 @@ const Service = () => {
           {services.map((service, index) => (
             <li key={service.id} >
               <div className={`service-card ${index === 4 && "xs:hidden"} `}>
-                <figure className={`card-icon ${index === 4 && "service-banner"}`}>
+                <figure className={`card-icon ${index === 4 && "service-banner"} ${index === 4 && "move-anim"}`}>
                   <img src={service.image} 
                     loading="lazy" alt={service.alt} />
                 </figure>

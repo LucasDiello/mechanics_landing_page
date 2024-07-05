@@ -6,6 +6,11 @@
 
 .footer-text { margin-block: 18px 20px; }
 
+.footer-brand {
+  position: relative;
+  z-index: 100;
+}
+
 .social-link {
   background-color: var(--oxford-blue-3);
   padding: 14px;
@@ -37,15 +42,10 @@
   gap: 10px;
 }
 
-.footer-link:is(:hover, :focus-visible) { color: var(--international-orange-engineering); }
-
-.footer-link .material-symbols-rounded {
-  flex-shrink: 0;
-  font-size: 1.8rem;
-  color: var(--international-orange-engineering);
+.footer-bottom {
+  background-color: var(--space-cadet);
 }
 
-.footer-bottom {
-  background-color: var(--oxford-blue-1);
-  padding-block: 20px;
+#root > footer > div.footer-top.section > div > div > a {
+  filter: drop-shadow(0 0 5px var(--oxford-blue-3));
 }

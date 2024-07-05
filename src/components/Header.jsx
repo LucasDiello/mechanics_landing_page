@@ -12,7 +12,6 @@ const Header = () => {
     >
       <div className="container flex justify-between items-center mx-auto">
         <a href="#" className="logo">
-          <img src={logo} width="128" height="63" className="ml-28" alt="Logo da Autofix" />
         </a>
 
         <nav className={`navbar ${navbar ? "active" : "hidden"}`} data-navbar>

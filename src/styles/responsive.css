@@ -2,6 +2,7 @@
   .hero-banner img {
     width: 80%;
   }
+
   .service .section-title {
     margin-block-end: 30px;
   }
@@ -21,9 +22,6 @@
   .about-item {
     padding-block: 20px;
   }
-  /**
-     * WORK
-     */
 
   .scrollbar-item {
     min-width: calc(47%);
@@ -75,6 +73,7 @@
 
   .service-banner img {
     margin-block-start: 15%;
+    filter: drop-shadow(-61px -50px 0px #837e6d);
   }
 
   .about-banner {
@@ -229,19 +228,7 @@
     left: 340px;
   }
 
-  .about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url("../assets/images/about-abs-banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    z-index: -1;
-  }
+
 
   .about::before {
     content: "";
@@ -267,23 +254,13 @@
 }
 
 @media (min-width: 1200px) {
-  /**
-     * CUSTOM PROPERTY
-     */
+
 
   :root {
-    /**
-       * typography
-       */
 
     --fs-2: 5rem;
     --fs-3: 4.6rem;
   }
-
-  /**
-     * REUSED STYLE
-     */
-
   .btn {
     padding: 18px 36px;
   }
@@ -291,10 +268,6 @@
   .btn .material-symbols-rounded {
     --fs: 1.3em;
   }
-
-  /**
-     * HEADER
-     */
 
   .header {
     padding-block: 25px;
@@ -309,10 +282,6 @@
     padding-block: 15px;
   }
 
-  /**
-     * HERO
-     */
-
   .hero .containe {
     grid-template-columns: 1fr 0.9fr;
   }
@@ -321,11 +290,6 @@
     font-size: 2rem;
     padding-inline-end: 120px;
   }
-
-  /**
-     * SERVICE
-     */
-
 
   .service-list li:nth-child(2) .card-text {
     padding-inline: 50px;
@@ -344,9 +308,6 @@
     margin-inline-end: 75px;
   }
 
-  /**
-     * WORK
-     */
 
   .work-card .card-btn {
     font-size: 2.4rem;
@@ -369,10 +330,6 @@
     left: 400px;
   }
 
-  /**
-     * FOOTER
-     */
-
   .footer-top {
     padding-block: 100px;
   }
@@ -392,8 +349,8 @@
     position: absolute;
     bottom: 0;
     width: 42%;
-    pointer-events: none;
     z-index: -1;
+    filter: drop-shadow(2px 4px 6px rgb(91, 12, 12));
   }
 
   .footer .shape-1 {
@@ -419,7 +376,7 @@
   }
 
   .hero {
-    padding: 200px;
+    padding: 100px;
   }
 
   .hero .section-text {

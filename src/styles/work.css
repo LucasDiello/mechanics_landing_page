@@ -1,8 +1,14 @@
-.work .containe { padding-inline: 0; }
+.work .containe {
+  padding-inline: 0;
+}
 
-.work .section-title { margin-block-end: 24px; }
+.work .section-title {
+  margin-block-end: 24px;
+}
 
-.work-card { position: relative; }
+.work-card {
+  position: relative;
+}
 
 .work-card .card-content {
   background-color: var(--white);
@@ -23,7 +29,9 @@
   margin-block-end: 5px;
 }
 
-.work-card .card-title { margin-block-end: 10px; }
+.work-card .card-title {
+  margin-block-end: 10px;
+}
 
 .work-card .card-btn {
   background-color: var(--international-orange-engineering);
