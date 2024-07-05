@@ -44,7 +44,7 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -89,7 +89,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -625,6 +625,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -657,10 +661,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-7 {
   gap: 1.75rem;
 }
@@ -669,21 +669,18 @@ video {
   gap: 50px;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
+.object-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .object-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .ps-10 {
@@ -694,16 +691,16 @@ video {
   padding-top: 5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .text-\[2\.4rem\] {
   font-size: 2.4rem;
 }
 
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
 }
 
 .font-\[var\(--fw-600\)\] {
