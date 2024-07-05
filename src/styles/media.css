@@ -47,17 +47,10 @@
 }
 
 @media (min-width: 768px) {
-  /**
-     * CUSTOM PROPERTY
-     */
   .hero-banner img {
-    width: 60%;
+    width: 50%;
   }
   :root {
-    /**
-       * typography
-       */
-
     --fs-1: 4rem;
     --fs-2: 5rem;
     --fs-3: 3.4rem;
@@ -88,10 +81,6 @@
     margin-block-start: 15%;
   }
 
-  /**
-     * ABOUT
-     */
-
   .about-banner {
     max-width: max-content;
   }
@@ -107,5 +96,153 @@
 
   .footer-top .containe {
     grid-template-columns: 1fr 0.9fr 0.9fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-banner img {
+    width: 100%;
+  }
+  :root {
+    --fs-2: 4.4rem;
+    --fs-3: 3.8rem;
+    --fs-4: 2.2rem;
+  }
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .header .containe {
+    gap: 30px;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: block;
+    margin-inline-start: auto;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+
+  .navbar-link {
+    position: relative;
+    font-size: unset;
+  }
+
+  .navbar-link:is(:hover, :focus-visible) {
+    background: none;
+    color: var(--white);
+  }
+
+  .navbar-link::after {
+    content: url("../assets/images/nav-before-img.png");
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  .navbar-link:is(:hover, :focus-visible)::after {
+    opacity: 1;
+  }
+
+  .header .btn {
+    display: flex;
+    padding: 12px 24px;
+    width: 100%;
+    font-size: var(--fs-5);
+  }
+
+  .hero {
+    text-align: left;
+    padding-block-end: 80px;
+  }
+
+  .hero .containe {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-content {
+    margin-left: 40px;
+  }
+
+  .hero :is(.section-subtitle, .btn) {
+    margin-inline: 0;
+  }
+
+  .hero .section-title {
+    text-align: left;
+  }
+
+  .hero-banner img {
+    width: 55%;
+  }
+
+  .service-list li:nth-child(-2n + 3) {
+    margin-block-start: 90px;
+  }
+
+  .service-list li:nth-child(4) {
+    margin-inline-end: 60px;
+  }
+
+  .service-list li:nth-child(6) {
+    margin-inline-start: 60px;
+  }
+
+  .service-banner img {
+    left: -55%;
+    margin-block-start: -10%;
+    width: 210%;
+  }
+
+  .about {
+    position: relative;
+    z-index: 1;
+  }
+
+  .about,
+  .about .section-title {
+    text-align: left;
+  }
+
+  .about .containe {
+    grid-template-columns: 1fr 0.75fr;
+    gap: 30px;
+  }
+
+  .about .section-subtitle {
+    margin-inline: 0;
+  }
+
+  .about-item {
+    text-align: center;
+  }
+
+  .about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/about-abs-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    z-index: -1;
+  }
+
+  .has-scrollbar {
+    overflow-x: visible;
+  }
+
+  .scrollbar-item {
+    min-width: calc(33.33% - 20px);
   }
 }
