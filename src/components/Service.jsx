@@ -64,14 +64,14 @@ const Service = () => {
         <ul className="service-list">
           {services.map((service, index) => (
             <li key={service.id} >
-              <div className="service-card ">
-                <figure className={`card-icon ${index === 4 && "service-banner"} ${index === 4 && "xs:hidden"}`}>
-                  <img src={service.image} width={`${index === 4 ? "646" : "110"}`}
-                   height={`${index === 4 ? "380" : "110"}`} loading="lazy" alt={service.alt} />
+              <div className={`service-card ${index === 4 && "xs:hidden"} `}>
+                <figure className={`card-icon ${index === 4 && "service-banner"}`}>
+                  <img src={service.image} 
+                    loading="lazy" alt={service.alt} />
                 </figure>
                 <h3 className="h3 text-[var(--eerie-black)] text-[2rem] font-[var(--fw-600)] leading-10   card-title">{service.title}</h3>
                 <p className=" leading-8 mb-4 mt-4">{service.description}</p>
-                <a href="#" className="btn-link">Read more</a>
+                <a href="#" className={`btn-link ${index === 4 && "hidden"}`}>Read more</a>
               </div>
             </li>
           ))}
