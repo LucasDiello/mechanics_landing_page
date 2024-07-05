@@ -23,9 +23,9 @@ const Footer = () => {
       ]
     },
     openingHours: [
-      { id: 1, day: "Monday – Saturday", hours: "12.00 – 14.45" },
-      { id: 2, day: "Sunday – Thursday", hours: "17.30 – 00.00" },
-      { id: 3, day: "Friday – Saturday", hours: "12.00 – 14.45" }
+      { id: 1, day: "Segunda – Sábado", hours: "12:00 – 14:45" },
+      { id: 2, day: "Domingo – Quinta", hours: "17:30 – 00:00" },
+      { id: 3, day: "Sexta – Sábado", hours: "12:00 – 14:45" }
     ],
     contactInfo: [
       { id: 1, icon: <BsTelephone />, text: "+55 51 9999-9999", url: "tel:+01234567890" },
@@ -48,7 +48,7 @@ const Footer = () => {
               {footerData.brand.socialLinks.map(link => (
                 <li key={link.id}>
                   <a href={link.url} className="social-link">
-                    <img src={link.icon} alt={`Social icon`} />
+                    <img src={link.icon} alt={`Ícone social`} />
                   </a>
                 </li>
               ))}
@@ -57,7 +57,7 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <p className="h3">Opening Hours</p>
+              <p className="h3">Horário de Funcionamento</p>
             </li>
             {footerData.openingHours.map(day => (
               <li key={day.id}>
@@ -69,7 +69,7 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <p className="h3">Contact Info</p>
+              <p className="h3">Informações de Contato</p>
             </li>
             {footerData.contactInfo.map(info => (
               <li key={info.id}>
@@ -82,13 +82,13 @@ const Footer = () => {
           </ul>
 
         </div>
-        <img src={footerShape3} width="637" height="173" loading="lazy" alt="Shape" className="shape shape-3 move-anim" />
+        <img src={footerShape3} width="637" height="173" loading="lazy" alt="Forma" className="shape shape-3 move-anim" />
       </div>
 
       <div className="footer-bottom">
-        <div className="containe">
-          <img src={footerShape2} width="778" height="335" loading="lazy" alt="Shape" className="shape shape-2" />
-          <img src={footerShape} width="805" height="652" loading="lazy" alt="Red Car" className="shape shape-1 move-anim" />
+        <div className="container">
+          <img src={footerShape2} width="778" height="335" loading="lazy" alt="Forma" className="shape shape-2" />
+          <img src={footerShape} width="805" height="652" loading="lazy" alt="Carro Vermelho" className="shape shape-1 move-anim" />
         </div>
       </div>
     </footer>

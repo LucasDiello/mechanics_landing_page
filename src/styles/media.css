@@ -201,9 +201,7 @@
   }
 
   .service-banner img {
-    left: -55%;
     margin-block-start: -10%;
-    width: 210%;
   }
 
   .about {
@@ -329,16 +327,13 @@
      */
 
 
-  .service-list {
-    margin-block-end: 70px;
-  }
-
   .service-list li:nth-child(2) .card-text {
     padding-inline: 50px;
   }
 
   .service-list li:nth-child(-2n + 3) {
     margin-block-start: 110px;
+    
   }
 
   .service-list li:is(:nth-child(1), :nth-child(6)) {

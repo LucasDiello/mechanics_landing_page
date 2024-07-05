@@ -9,34 +9,35 @@ const projects = [
   {
     id: 1,
     image: work1,
-    alt: "Engine Repair",
-    title: "Engine Repair",
-    subtitle: "Auto Repair"
+    alt: "Reparo de Motor",
+    title: "Reparo de Motor",
+    subtitle: "Reparo Automotivo"
   },
   {
     id: 2,
     image: work2,
-    alt: "Car Tyre change",
-    title: "Car Tyre change",
-    subtitle: "Auto Repair"
+    alt: "Troca de Pneus do Carro",
+    title: "Troca de Pneus do Carro",
+    subtitle: "Reparo Automotivo"
   },
   {
     id: 3,
     image: work3,
-    alt: "Battery Adjust",
-    title: "Battery Adjust",
-    subtitle: "Auto Repair"
+    alt: "Ajuste de Bateria",
+    title: "Ajuste de Bateria",
+    subtitle: "Reparo Automotivo"
   }
 ];
+
 
 const Work = () => {
   return (
     <section className="section work mt-10" aria-labelledby="work-label">
       <div className="containe">
 
-        <p className="section-subtitle text-[2rem] :light" id="work-label">Our Work</p>
+        <p className="section-subtitle text-[2rem] :light" id="work-label">Nosso Trabalho</p>
 
-        <h2 className="text-[var(--eerie-black)] h2 text-[2.4rem] font-[var(--fw-600)] leading-10 section-title">Latest projects we have done</h2>
+        <h2 className="text-[var(--eerie-black)] h2 text-[2.4rem] font-[var(--fw-600)] leading-10 section-title">Últimos projetos que realizamos</h2>
 
         <ul className="has-scrollbar">
           {projects.map(project => (

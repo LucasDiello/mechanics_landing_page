@@ -8,50 +8,49 @@ const Header = () => {
 
   return (
     <header
-      className="header absolute top-0 left-0 w-[100%] p-[40px 15px] ps-10
-    z-10"
+      className="header absolute top-0 left-0 w-[100%] p-[40px 15px] ps-10 z-10"
     >
-      <div className="containe flex justify-between items-center mx-auto ">
+      <div className="container flex justify-between items-center mx-auto">
         <a href="#" className="logo">
-          <img src={logo} width="128" height="63" className="ml-28"  alt="autofix home" />
+          <img src={logo} width="128" height="63" className="ml-28" alt="Logo da Autofix" />
         </a>
 
         <nav className={`navbar ${navbar ? "active" : "hidden"}`} data-navbar>
           <ul className="navbar-list">
             <li>
               <a href="#" className="navbar-link">
-                Home
+                Início
               </a>
             </li>
 
             <li>
               <a href="#" className="navbar-link">
-                About
+                Sobre
               </a>
             </li>
 
             <li>
               <a href="#" className="navbar-link">
-                Services
+                Serviços
               </a>
             </li>
 
             <li>
               <a href="#" className="navbar-link">
-                Projects
+                Projetos
               </a>
             </li>
 
             <li>
               <a href="#" className="navbar-link">
-                Contact
+                Contato
               </a>
             </li>
           </ul>
         </nav>
 
         <a href="#" className="btn hidden btn-primary">
-          <span className="span">Get a Quote</span>
+          <span className="span">Orçamento</span>
 
           <span className="material-symbols-rounded">
             <BiArrowFromLeft />
@@ -60,7 +59,7 @@ const Header = () => {
 
         <button
           className={`nav-toggle-btn ${navbar ? "active" : ""}`}
-          aria-label="toggle menu"
+          aria-label="alternar menu"
           data-nav-toggler
           onClick={() => setNavbar(!navbar)}
         >
