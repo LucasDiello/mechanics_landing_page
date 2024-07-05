@@ -6,6 +6,7 @@ import heroBanner from "../assets/images/hero-banner.png";
 import { BiArrowFromLeft } from "react-icons/bi";
 import Service from "./Service";
 import About from "./About";
+import Work from "./Work";
 const Hero = () => {
   return (
     <main>
@@ -30,6 +31,7 @@ const Hero = () => {
     </section>
     <Service />
     <About />
+    <Work />
       </article>
     </main>
   );
