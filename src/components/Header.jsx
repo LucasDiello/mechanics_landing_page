@@ -10,10 +10,7 @@ const Header = () => {
     <header
       className="header absolute top-0 left-0 w-[100%] p-[40px 15px] ps-10 z-10"
     >
-      <div className="container flex justify-between items-center mx-auto">
-        <a href="#" className="logo">
-        </a>
-
+      <div className="containe flex justify-end mt-10 lg:mt-0 items-center mx-auto">
         <nav className={`navbar ${navbar ? "active" : "hidden"}`} data-navbar>
           <ul className="navbar-list">
             <li>
