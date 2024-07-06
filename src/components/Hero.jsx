@@ -14,7 +14,7 @@ const Hero = () => {
       <article>
         <section className="hero has-bg-image" aria-label="página inicial">
           <div className="containe">
-            <div className="hero-content">
+            <div className="hero-content space-y-10">
               <p className="section-subtitle :dark">Temos engenheiros e mecânicos talentosos</p>
               <h1 className="h1 section-title">Manutenção & Reparo & Concerto</h1>
               <p className="section-text">
